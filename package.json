@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm run dev -- -- --watch",
-    "build": "postcss src/css/main.css -o dist/css/bundle.css",
+    "build": "postcss src/css/main.css -o dist/css/bundle.css --progress",
     "dev": "cross-env NODE_ENV=development npm run build",
     "prod": "cross-env NODE_ENV=production npm run build"
   },
