@@ -17,3 +17,14 @@ body {
 h1,h2,h3,h4,h5,h6 {
     @apply font-display;
 }
+
+.img-me {
+    width: 12rem;
+    margin-right: 5rem;
+    border-radius: 50%;
+    transition: all .3s;
+
+    &:hover {
+        border-radius: 0;
+    }
+}
