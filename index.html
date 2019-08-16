@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Webpage for Ritesh Sahu Portfolio">
-  <link rel="stylesheet" href="/dist/css/bundle.css">
+  <link rel="stylesheet" href="/dist/css/app.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i|Montserrat:400,700&display=swap"
     rel="stylesheet">
   <title>Ritesh Sahu | Developer</title>
@@ -16,7 +16,7 @@
 
   <header class="p-10 bg-white">
     <div class="flex flex-wrap items-center mx-10 -mt-5">
-      <img src="img/Ritesh sahu.png" alt="Ritesh Sahu" class="img-me cursor-pointer mt-5">
+      <img src="/img/Ritesh sahu.png" alt="Ritesh Sahu" class="img-me cursor-pointer mt-5">
 
       <div class="mt-5">
         <h1 class="text-4xl font-bold">Ritesh Sahu</h1>
@@ -28,6 +28,14 @@
           <li class="px-3"><a href="#"><img class="w-8 h-8" src="img/svg/linkedin-logo.svg" alt="Linked In"></a></li>
           <li class="px-3"><a href="#"><img class="w-8 h-8" src="img/svg/facebook-logo.svg" alt="Facebook"></a></li>
         </ul>
+      </div>
+
+      <div class="ml-auto">
+        <a href="mailto:riteshsahu314@gmail.com" title="Send mail to Ritesh Sahu"
+          class="flex flex-no-wrap bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <img src="/img/svg/paper-plane.svg" alt="Send Mail" class="h-4 mt-1 mr-2">
+          <span class="uppercase">mail</span>
+        </a>
       </div>
     </div>
   </header>
@@ -42,25 +50,35 @@
               <div class="font-bold mr-1">Languages:</div>
               <ul class="flex flex-wrap ml-1">
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#" title="PHP is a general-purpose scripting language that is especially suited for web development.">PHP</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://www.php.net/manual/en/intro-whatis.php"
+                    title="PHP is a general-purpose scripting language that is especially suited for web development.">PHP</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Javascript</a>,
+                  <a class="hover:text-blue-500" target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    title="JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.">Javascript</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">C</a>,
+                  <a class="hover:text-blue-500" target="_blank"
+                    href="https://www.geeksforgeeks.org/c-language-set-1-introduction/"
+                    title="C is a general-purpose procedural programming language.">C</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">C++</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://www.geeksforgeeks.org/c-plus-plus/"
+                    title="C++ is a general-purpose object oriented programming language.">C++</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">HTML</a>,
+                  <a class="hover:text-blue-500" target="_blank"
+                    href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                    title="Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser.">HTML</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">CSS</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                    title="Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML">CSS</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Sass</a>.
+                  <a class="hover:text-blue-500" target="_blank" href="https://sass-lang.com/"
+                    title="SASS (Syntactically Awesome Stylesheet) is a CSS pre-processor, which helps to reduce repetition with CSS and saves time.">Sass</a>.
                 </li>
               </ul>
             </div>
@@ -69,13 +87,16 @@
               <div class="font-bold mr-1">Frameworks:</div>
               <ul class="flex flex-wrap ml-1">
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Laravel</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://laravel.com/"
+                    title="Laravel is a powerful MVC PHP framework, designed for developers who need a simple and elegant toolkit to create full-featured web applications.">Laravel</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Vue.js</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://vuejs.org/"
+                    title="Vue.js is an open-source JavaScript framework for building user interfaces and single-page applications.">Vue.js</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Bootstrap</a>.
+                  <a class="hover:text-blue-500" target="_blank" href="https://getbootstrap.com/"
+                    title="Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.">Bootstrap</a>.
                 </li>
               </ul>
             </div>
@@ -84,16 +105,23 @@
               <div class="font-bold mr-1">Concepts:</div>
               <ul class="flex flex-wrap ml-1">
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">RESTful API</a>,
+                  <a class="hover:text-blue-500" target="_blank"
+                    href="https://www.geeksforgeeks.org/rest-api-introduction/"
+                    title="REpresentational State Transfer (REST) is an architectural style that defines a set of constraints to be used for creating web services.">RESTful
+                    API</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">OOP</a>,
+                  <a class="hover:text-blue-500" target="_blank"
+                    href="https://en.wikipedia.org/wiki/Object-oriented_programming"
+                    title="Object-oriented programming is a programming paradigm based on the concept of 'objects', which can contain data, in the form of fields, and code, in the form of procedures.">OOP</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">AJAX</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://www.w3schools.com/whatis/whatis_ajax.asp"
+                    title="AJAX (Asynchronous JavaScript And XML) allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes.">AJAX</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">BEM</a>.
+                  <a class="hover:text-blue-500" target="_blank" href="http://getbem.com/"
+                    title="Block Element Modifier is a methodology that helps you to create reusable components and code sharing in front-end development">BEM</a>.
                 </li>
               </ul>
             </div>
@@ -102,10 +130,12 @@
               <div class="font-bold mr-1">Tools & Technology:</div>
               <ul class="flex flex-wrap ml-1">
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Git</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://git-scm.com/"
+                    title="Git is a distributed version-control system for tracking changes in source code during software development.">Git</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">WebPack</a>.
+                  <a class="hover:text-blue-500" target="_blank" href="https://webpack.js.org/"
+                    title="Webpack is an open-source JavaScript module bundler.">WebPack</a>.
                 </li>
               </ul>
             </div>
@@ -114,7 +144,8 @@
               <div class="font-bold mr-1">Databases:</div>
               <ul class="flex flex-wrap ml-1">
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">MySQL</a>.
+                  <a class="hover:text-blue-500" target="_blank" href="https://www.mysql.com/"
+                    title="MySQL is an open-source relational database management system.">MySQL</a>.
                 </li>
               </ul>
             </div>
@@ -123,10 +154,14 @@
               <div class="font-bold mr-1">Editor Journey:</div>
               <ul class="flex flex-wrap ml-1">
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">VS Code</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://code.visualstudio.com/"
+                    title="Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.">VS
+                    Code</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">PHP Storm</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://www.jetbrains.com/phpstorm/"
+                    title="JetBrains PhpStorm is a commercial, cross-platform IDE for PHP built on JetBrains' IntelliJ IDEA platform.">PHP
+                    Storm</a>,
                 </li>
               </ul>
             </div>
@@ -135,13 +170,12 @@
               <div class="font-bold mr-1">Operating System:</div>
               <ul class="flex flex-wrap ml-1">
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Ubuntu</a>,
+                  <a class="hover:text-blue-500" target="_blank" href="https://www.linux.org/"
+                    title="Linux is a family of open source Unix-like operating systems based on the Linux kernel">Linux</a>,
                 </li>
                 <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Linux</a>,
-                </li>
-                <li class="text-blue-700 pr-2">
-                  <a class="hover:text-blue-500" target="_blank" href="#">Windows</a>.
+                  <a class="hover:text-blue-500" target="_blank" href="https://en.wikipedia.org/wiki/Microsoft_Windows"
+                    title="Windows is a series of operating systems developed by Microsoft. ">Windows</a>.
                 </li>
               </ul>
             </div>
@@ -149,14 +183,13 @@
         </section>
 
         <section>
-          
+
         </section>
       </div>
 
       <div class="w-full lg:w-1/3 px-5 mb-5">
-        <section class="bg-white p-5">
-          jdsf
-        </section>
+        <aside class="bg-white p-5">
+        </aside>
       </div>
     </div>
   </div>
