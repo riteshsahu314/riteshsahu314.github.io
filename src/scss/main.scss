@@ -40,3 +40,10 @@ h1,h2,h3,h4,h5,h6 {
         @apply underline;
     }
 }
+
+.heading-2 {
+    @apply text-2xl;
+    @apply font-bold;
+    @apply text-gray-700;
+    @apply mb-5;
+}
