@@ -33,7 +33,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .link {
     @apply text-blue-500;
-    vertical-align: middle;
     
     &:hover {
         @apply text-blue-700;
@@ -46,4 +45,17 @@ h1,h2,h3,h4,h5,h6 {
     @apply font-bold;
     @apply text-gray-700;
     @apply mb-5;
+}
+
+.heading-3 {
+    @apply font-bold;
+    @apply text-gray-600;
+
+    & > a {
+        color: inherit;
+
+        &:hover {
+            @apply text-gray-700;
+        }
+    }
 }
