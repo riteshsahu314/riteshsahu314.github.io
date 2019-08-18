@@ -1,8 +1,10 @@
 @import "tailwindcss/base";
-
 @import "tailwindcss/components";
-
 @import "tailwindcss/utilities";
+
+/* purgecss start ignore */
+@import "../../node_modules/venobox/venobox/venobox";
+/* purgecss end ignore */
 
 .font-body {
     font-family: 'Lato', sans-serif;
@@ -73,4 +75,20 @@ h1,h2,h3,h4,h5,h6 {
             @apply p-10;
         }
     }
+}
+
+.venoframe {
+    margin: 0 auto;
+    height: 85vh;
+    padding: .5rem 0 !important;
+}
+
+.vbox-container {
+    overflow: hidden;
+}
+
+.vbox-inline {
+    height: auto;
+    width: auto;
+    max-width: 700px;
 }

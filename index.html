@@ -114,6 +114,10 @@
                 <a class="link" target="_blank" href="https://getbootstrap.com/"
                   title="Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.">Bootstrap.</a>
               </li>
+              <li class="pr-2">
+                <a class="link" target="_blank" href="hhttps://tailwindcss.com/"
+                  title="A utility-first CSS framework for rapidly building custom designs.">Tailwind CSS.</a>
+              </li>
             </ul>
 
             <ul class="flex flex-wrap mb-3">
@@ -194,10 +198,22 @@
               <div class="mb-2">
                 <h3 class="heading-3"><a href="https://git-upvote.herokuapp.com/" target="_blank"
                     class="link">Upvote</a></h3>
-                <p class="pb-1">An open source question and answer site like <a target="_blank" href="https://stackoverflow.com/"
-                    class="link">stackoverflow</a>.</p>
-                <p><span class="font-bold text-gray-900">Technology Stack - </span>PHP, Laravel, HTML, CSS, JavaScript,
+                <p class="pb-1">An open source question and answer site like <a target="_blank"
+                    href="https://stackoverflow.com/" class="link">stackoverflow</a>.</p>
+                <p><span class="font-bold text-gray-900">Technology Stack - </span>PHP, Laravel, Vue, HTML, CSS,
+                  JavaScript,
                   Linux.</p>
+              </div>
+              <div>
+                <a class="link flex items-center venobox" data-vbtype="inline" href="#upvote-stack">
+                  <img src="img/svg/unlink.svg" alt="Icon" class="h-4 mr-2">
+                  <span class="text-base">View Full Technology Stack</span>
+                </a>
+                <div class="hidden" id="upvote-stack">
+                  <div class="p-5">
+                    <p>PHP, Laravel, MySQL, HTML, CSS, JavaScript, Bootstrap, FontAwesome, WebPack, SASS, Algolia, Vue.</p>
+                  </div>
+                </div>
               </div>
               <a href="https://git-upvote.herokuapp.com/" class="link flex items-center" target="_blank">
                 <img src="img/svg/external-link-symbol.svg" alt="Icon" class="h-4 mr-2">
@@ -205,14 +221,28 @@
               </a>
             </li>
 
-            <li>
+            <li class="mb-10">
               <div class="mb-2">
                 <h3 class="heading-3"><a href="https://riteshsahu314.github.io/foodspoint/" target="_blank"
                     class="link">FoodsPoint</a></h3>
                 <p class="pb-1">Landing page for a food ordering website.</p>
-                <p><span class="font-bold text-gray-900">Technology Stack - </span>HTML, CSS, JavaScript.</p>
+                <p><span class="font-bold text-gray-900">Technology Stack - </span>HTML, JavaScript, CSS, SASS, WebPack.</p>
               </div>
+
               <a href="https://riteshsahu314.github.io/foodspoint/" class="link flex items-center" target="_blank">
+                <img src="img/svg/external-link-symbol.svg" alt="Icon" class="h-4 mr-2">
+                <span class="text-base">Find Out More</span>
+              </a>
+            </li>
+
+            <li>
+              <div class="mb-2">
+                <h3 class="heading-3"><a href="https://riteshsahu314.github.io" target="_blank"
+                    class="link">My Portfolio</a></h3>
+                <p class="pb-1">A one page website for my portfolio. The one which you are viewing now.</p>
+                <p><span class="font-bold text-gray-900">Technology Stack - </span>HTML, JavaScript, CSS, SASS, WebPack, jQuery, Tailwind CSS.</p>
+              </div>
+              <a href="https://riteshsahu314.github.io" class="link flex items-center" target="_blank">
                 <img src="img/svg/external-link-symbol.svg" alt="Icon" class="h-4 mr-2">
                 <span class="text-base">Find Out More</span>
               </a>
@@ -247,7 +277,9 @@
 
             <li>
               <img src="/img/svg/customer.svg" alt="Location Icon" class="inline-block mr-2 h-5">
-              <a class="link align-middle" href="https://forms.gle/q7xdWceVUrHBG8eP8" title="Contact Ritesh Sahu">
+              <a class="js--contact-me link" data-vbtype="iframe"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSci9KzAtAgqV13277F-PhJ4Iak93Y78AZNSyLHoBYD4LZX3Pw/viewform?embedded=true"
+                title="Contact Form">
                 Contact Me
               </a>
             </li>
@@ -284,6 +316,7 @@
           </ul>
         </aside>
 
+        <!-- Languages -->
         <aside class="card">
           <h2 class="heading-2">Languages</h2>
           <ul>
@@ -303,6 +336,8 @@
   <footer class="bg-gray-700">
     <p class="text-center p-3 text-white">Copyright &copy; Ritesh Sahu 2019</p>
   </footer>
+
+  <script src="dist/js/app.js"></script>
 </body>
 
 </html>

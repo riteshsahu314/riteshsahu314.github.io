@@ -36,6 +36,8 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
-    "tailwindcss": "^1.0.5"
+    "jquery": "^3.4.1",
+    "tailwindcss": "^1.0.5",
+    "venobox": "^1.8.6"
   }
 }
