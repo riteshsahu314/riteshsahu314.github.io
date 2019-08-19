@@ -24,18 +24,48 @@ module.exports = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
+        // use: [
+        //   MiniCssExtractPlugin.loader,
+        //   'css-loader',
+        //   'postcss-loader',
+        //   'sass-loader'
+        // ],
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          {
+            loader: 'css-loader',
+            options: { url: false}
+          },
           'postcss-loader',
           'sass-loader'
-        ],
+        ]
       },
       
       {
         test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
+      },
+
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
+      },
+
+      {
+        test: /\.png$/,
+        loader: 'file-loader',
+        options: {
+          name: 'images/[name].[ext]'
+        }
       }
     ]
   },

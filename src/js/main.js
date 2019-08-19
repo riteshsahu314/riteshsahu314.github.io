@@ -6,9 +6,13 @@ try {
 } catch (e) {}
 
 $(document).ready(function(){
+
+    $('.venobox').venobox();
+    
     $('.js--contact-me').venobox({
         framewidth: '700px'
     });
 
-    $('.venobox').venobox();
 });
+
+require("../images/RiteshSahu.png");
