@@ -15,4 +15,4 @@ $(document).ready(function(){
 
 });
 
-require("../images/RiteshSahu.png");
+require("../images/RiteshSahu.jpg");
