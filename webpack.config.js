@@ -1,6 +1,6 @@
-const webpack = require('webpack');
+const webpack = require("webpack");
 
-const path = require('path');
+const path = require("path");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -8,15 +8,12 @@ const mode = process.env.NODE_ENV || "development";
 
 module.exports = {
   entry: {
-    app: [
-      './src/js/main.js',
-      './src/scss/main.scss'
-    ]
+    app: ["./src/js/main.js", "./src/scss/main.scss"]
   },
 
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name].js'
+    path: path.resolve(__dirname, "dist"),
+    filename: "js/[name].js"
   },
 
   module: {
@@ -33,28 +30,28 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
-            options: { url: false}
+            loader: "css-loader",
+            options: { url: false }
           },
-          'postcss-loader',
-          'sass-loader'
+          "postcss-loader",
+          "sass-loader"
         ]
       },
-      
+
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ["babel-loader"]
       },
 
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]',
-              outputPath: 'fonts/'
+              name: "[name].[ext]",
+              outputPath: "fonts/"
             }
           }
         ]
@@ -62,20 +59,18 @@ module.exports = {
 
       {
         test: /\.jpg$/,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: 'images/[name].[ext]'
+          name: "images/[name].[ext]"
         }
       }
     ]
   },
 
   plugins: [
-
     new MiniCssExtractPlugin({
       filename: "css/[name].css"
     })
-
   ],
 
   mode: mode
