@@ -1,103 +1,113 @@
 .font-body {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .font-display {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    @apply font-body;
-    font-weight: 400;
+  @apply font-body;
+  font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    @apply font-display;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-display;
 }
 
 .img-me {
-    width: 12rem;
-    border-radius: 50%;
-    transition: all .3s;
+  width: 12rem;
+  border-radius: 50%;
+  transition: all 0.3s;
 
-    &:hover {
-        border-radius: 0;
-    }
+  &:hover {
+    border-radius: 0;
+  }
 }
 
 .link {
-    @apply text-blue-500;
-    
-    &:hover {
-        @apply text-blue-700;
-        @apply underline;
-    }
+  @apply text-blue-500;
+
+  &:hover {
+    @apply text-blue-700;
+    @apply underline;
+  }
 }
 
 .link-simple {
-    @apply text-blue-500;
-    
-    &:hover {
-        @apply text-blue-700;
-    }
+  @apply text-blue-500;
+
+  &:hover {
+    @apply text-blue-700;
+  }
 }
 
 .heading-2 {
-    @apply text-2xl;
-    @apply font-bold;
-    @apply text-gray-700;
-    @apply mb-5;
+  @apply text-2xl;
+  @apply font-bold;
+  @apply text-gray-700;
+  @apply mb-5;
 }
 
 .heading-3 {
-    @apply font-bold;
-    @apply text-gray-600;
+  @apply font-bold;
+  @apply text-gray-600;
 
-    & > a {
-        color: inherit;
+  & > a {
+    color: inherit;
 
-        &:hover {
-            @apply text-gray-700;
-        }
+    &:hover {
+      @apply text-gray-700;
     }
+  }
 }
 
 .title {
-    @apply font-bold;
-    @apply mr-1;
-    @apply text-gray-800;
+  @apply font-bold;
+  @apply mr-1;
+  @apply text-gray-800;
 }
 
 .card {
-    @apply bg-white p-6;
+  @apply bg-white p-6;
 
-    @screen sm {
-        & {
-            @apply p-10;
-        }
+  @screen sm {
+    & {
+      @apply p-10;
     }
+  }
 }
 
 .venoframe {
-    margin: 0 auto;
-    height: 85vh;
-    padding: .5rem 0 !important;
+  margin: 0 auto;
+  height: 85vh;
+  padding: 0.5rem 0 !important;
 }
 
 .vbox-container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .vbox-inline {
-    height: auto;
-    width: auto;
-    max-width: 700px;
+  height: auto;
+  width: auto;
+  max-width: 700px;
 }
 
 .icon {
-    vertical-align: middle;
+  vertical-align: middle;
 
-    & + * {
-        vertical-align: middle;
-    }
+  & + * {
+    vertical-align: middle;
+  }
+}
+
+.vbox-figlio {
+  margin: 0 auto;
+  max-width: 80% !important;
 }
